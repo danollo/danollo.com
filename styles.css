@@ -1,17 +1,9 @@
 *{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Bebas Neue";
     text-align: center;
-    font-family: "Bebas Neue"
 }
 h1{
-    font-size: 72px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    font-size: 72px; 
 }
 
 html{
@@ -20,11 +12,15 @@ background-color: darkkhaki;
 
 a{
 text-decoration: none;
-transform: scale(5);
-padding-left: 50px;
-padding-right: 50px;
-top: 50%;
-left: 50%;
-margin-right: -50%;
-align-content: center;
 }
+.layout {
+    width: 100%;
+  
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 30%);
+    grid-template-columns: auto;
+    grid-auto-flow: column dense;
+  
+    justify-content: center;
+    align-content: center;
+  }
